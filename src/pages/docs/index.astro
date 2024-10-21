@@ -1,0 +1,13 @@
+---
+import type { FromatterProps } from "@/types/index";
+import Layout from "@/layouts/layout/index.astro";
+
+const [template] = await Astro.glob<FromatterProps>(
+  "../../examples/markdown/docs.md",
+);
+const content = template.compiledContent();
+---
+
+<Layout title="Documentation" description="React tabs documentation">
+  <div class="max-w-full prose dark:prose-invert" set:html={content} />
+</Layout>

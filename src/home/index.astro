@@ -1,0 +1,28 @@
+---
+import Card from "../components/card/card.astro";
+import CustomIconTabs from "../examples/customsIconTabs/index.astro";
+import CustomTabs from "../examples/customTabs/index.astro";
+import DefaultTabs from "../examples/defaultTabs/index.astro";
+import MainLayout from "@/layouts/layout/index.astro";
+---
+
+<MainLayout title="React tabs" description="React tabs documentation library">
+  <p class="text-black dark:text-white text-lg my-10">
+    This ReactJS library offers a fully customizable, dynamic tab system that
+    allows developers to easily integrate multi-view content navigation into
+    their applications. Designed for versatility and ease of use, this tab
+    component can seamlessly fit into any project, whether you're building a
+    dashboard, a user profile, or a data-driven application.
+  </p>
+  <Card>
+    <DefaultTabs />
+  </Card>
+  <div class="my-10"></div>
+  <Card>
+    <CustomTabs />
+  </Card>
+  <div class="my-10"></div>
+  <Card>
+    <CustomIconTabs />
+  </Card>
+</MainLayout>

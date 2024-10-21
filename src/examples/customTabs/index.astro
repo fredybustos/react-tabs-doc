@@ -1,0 +1,8 @@
+---
+import CustomTabs from ".";
+const [template] = await Astro.glob("../markdown/custom.md");
+const content = template.compiledContent();
+---
+
+<h2 class="text-xl font-semibold dark:text-white mb-6">Custom tabs</h2>
+<CustomTabs client:load content={content} />

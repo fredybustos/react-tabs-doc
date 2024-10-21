@@ -1,5 +1,5 @@
 {
-  "name": "demo-react-tabs",
+  "name": "react-tabs-docs",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,8 +10,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.3",
     "@astrojs/check": "^0.9.4",
+    "@astrojs/react": "^3.6.2",
+    "@astrojs/tailwind": "^5.1.2",
+    "@fredybustos/react-tabs": "file:../fredy/react-tabs",
+    "astro": "^4.16.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.13",
     "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15"
   }
 }

@@ -1,0 +1,15 @@
+---
+import type { FromatterProps } from "@/types/index";
+import Layout from "@/layouts/layout/index.astro";
+
+const [template] = await Astro.glob<FromatterProps>(
+  "../examples/markdown/docs.md",
+);
+const { title, author } = template.frontmatter;
+console.log(">>>>>>>>>>>description", { template, title, author });
+---
+
+<Layout title="Documentation" description="React tabs documentation">
+  <h4>{title}</h4>
+  <p>{author}</p>
+</Layout>

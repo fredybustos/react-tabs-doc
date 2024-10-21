@@ -1,0 +1,91 @@
+---
+import type { LayoutProps } from "@/types/index";
+import Header from "@/layouts/header/index.astro";
+
+type Props = LayoutProps;
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <Header title={title} description={description} />
+  <body>
+    <main class="p-10 lg:p-0 max-w-screen-xl m-auto">
+      <header
+        class="border-b border-slate-800 dark:bg-slate-900/95 sticky top-0 backdrop-blur z-50 bg-white"
+      >
+        <div class="py-4 flex justify-between items-center">
+          <a
+            href="/"
+            class="w-full text-2xl font-semibold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent"
+          >
+            React Tabs
+          </a>
+          <nav class="w-full">
+            <ul class="flex justify-end gap-6">
+              <li>
+                <a class="dark:text-slate-300 hover:text-white transition-colors" href="/docs">Docs</a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  class="dark:text-slate-300 hover:text-white transition-colors"
+                  href="https://github.com/fredybustos/react-tabs">Github</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <slot />
+      <footer class="text-black dark:text-white text-sm p-4">
+        <p class="text-black dark:text-white text-sm mt-8">
+          &copy; 2024 React Tabs. All rights reserved.
+        </p>
+        <div class="mt-2">
+          Created by
+          <a
+            href="https://github.com/fredybustos"
+            class="text-blue-500 underline"
+            target="_blank"
+          >
+            Fredy Bustos
+          </a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
+<style is:global>
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #0f172a;
+  }
+
+  code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    white-space: break-spaces;
+    background-color: light-dark(#eff1f2, #282829);
+    border-radius: 6px;
+  }
+  code::before {
+    display: none;
+  }
+  code::after {
+    display: none;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #fff;
+    }
+  }
+</style>
