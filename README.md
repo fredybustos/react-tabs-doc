@@ -23,4 +23,4 @@ This project showcases three examples of the React Tabs component:
 
 ### Credits
 
-This project uses the React Tabs component developed by ![Fredy Bustos](https://github.com/fredybustos). Refer to the ![original documentation](https://github.com/fredybustos/react-tabs) for more information.
+This project uses the React Tabs component developed by [Fredy Bustos](https://github.com/fredybustos). Refer to the [original documentation](https://github.com/fredybustos/react-tabs) for more information.
