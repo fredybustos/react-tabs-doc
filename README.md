@@ -1,4 +1,4 @@
-# React Tabs documentation
+# React Tabs implementation
 
 This project demonstrates the implementation of the React Tabs component, showcasing its versatility and customization options.
 
