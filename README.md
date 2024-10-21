@@ -2,6 +2,8 @@
 
 This project demonstrates the implementation of the React Tabs component, showcasing its versatility and customization options.
 
+Refer to the oficial [React tabs](https://github.com/fredybustos/react-tabs) documentation
+
 ## Installation
 
 To run this project, follow these steps:
